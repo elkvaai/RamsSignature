@@ -1,0 +1,533 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+ 
+body{
+   margin: 0;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* row1 */
+.row1{
+   background:
+   linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+   url(https://static.tildacdn.com/tild3539-6463-4439-b533-653664373263/Rectangle_471.jpg);
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+.ph{
+   display: grid;
+   grid-template-columns: 45% 60%;
+}
+.logo{
+   background-color: #7e964e;
+   padding: 3%;
+}
+.img25{
+   margin: 5%;
+}
+.garden_img{
+   color: #ffffff;
+   font-size: 240px;
+   margin: 7% 0% 0% 4%;
+   padding-bottom: 15%;
+   letter-spacing: 80px;
+}
+
+/* row2 */
+.row2{
+   background-color: #7e964e;
+   padding: 10% 12%;
+   color: #ffffff;
+   position: relative;
+}
+.life_txt{font-size: 50px;}
+.col{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-column-gap: 5%;
+}
+.video{
+   width: 1100px; height: 650px;
+   padding: 5% 1%;
+}
+.video1{
+   position: absolute;
+   top: 52%;
+   left: 42%;
+   border: 2px solid white;
+   border-radius: 50%;
+   padding: 7%;
+}
+.garden_img1{
+   width: 1473px;
+   position: absolute;
+   top: 80%; 
+   left: 0%;
+   right: 0%;
+}
+
+/* row3 */
+.col1{
+   display: grid;
+   grid-template-columns: 45% 55%;
+   position: relative;
+}
+.img1{width: 750px; height: 650px;}
+.img2{
+   position:absolute;
+   top: 33.4%;
+   left: 50%;
+}
+.zhk{
+   padding: 10% 10% 5% 25%;
+   font-size: 20px;
+}
+.col2{
+   display: grid;
+   grid-template-columns: 45% 55%;
+   position: relative;
+   margin-bottom: 10%;
+}
+.img3{width: 810px; height: 650px;}
+.img4{
+   position: absolute;
+   left: 40%;
+} 
+.zhk1{
+   padding: 20% 25% 5% 10%;
+   font-size: 20px;
+}
+
+ /* row4 */
+ .row4{
+   padding-bottom: 3%;
+ }
+.karta_txt{
+   font-size: 50px;
+   margin: 0%  0% 2% 6.5%;
+   color:  #373a40;
+}
+.karta{
+   border:5px solid #7e964e ;
+   padding: 3% 4%; 
+   margin-left: 3%;
+}
+
+/* row5 */
+.galery{
+   background-color: #2b2a29;
+   padding: 5% 2% 20% 46.4%;
+   position: relative;
+   z-index: 1;
+}
+.marquee{
+   position: relative;
+   z-index: 2;
+   margin-top: -20%; 
+}
+.img_g{
+   width: 600px; height: 450px;
+   margin-right: 1%;
+}
+
+/* row6 */
+.row6{
+   color: #373a40;
+   padding: 2% 5%;
+}
+.prem{ 
+   padding: 3%;  
+   font-size: 45px;
+} 
+details div {padding: 2.5em;} 
+summary {list-style: none;} 
+summary { 
+   border-top: 1px solid #7e964e; 
+   margin: 0% 3%;    
+   cursor: pointer; 
+   position: relative; 
+   font-size: 25px; 
+   display: flex;
+   align-items: center;
+   display: grid;
+   grid-template-columns: 15% 85%;
+}  
+summary:before { 
+   position: absolute; 
+   top: 23%; 
+   right: 6%; 
+   content: url("https://static.tildacdn.com/tild6566-6464-4933-a166-383834316636/Subtract.svg"); 
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+} 
+details[open] summary:before {
+   transform: rotate(45deg);
+} 
+.numbers{ 
+   color: #7e964e;
+   display: flex;
+   justify-content: center;
+} 
+.opisanie{
+   width: 900px;
+   margin-left: 15%;
+}
+.fit{
+   margin: 2% 15%;
+   color: #272a31;;
+}
+   
+ /* row7 */
+ .row7{
+   display: grid;
+   grid-auto-flow: column;
+   padding:  3% 15% 5% 15%;
+   margin-bottom: -13%;
+ }
+ .clm1{
+   padding: 10% 15% 0% 15%;
+   color: #7e964e;
+   background-color: #ffffff;
+ }  
+.clm2{
+   background: url(https://static3.tildacdn.com/tild3235-6165-4035-b530-346638393736/Rectangle_407.jpg);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #ffffff;
+   width: 500px; height: 250px;
+   padding: 5%;
+}
+.btn2{
+   background-color: #7e964e;
+   color: #ffffff;
+   border: #7e964e;
+   height: 40px; width: 380px;
+   font-size: 15px;
+   margin-top: 5%;
+}
+.accept{
+   font-size: 13px;
+   opacity: 0.7;
+}
+.inp{
+   margin-bottom: 5%;
+   width: 380px; height: 30px;
+   border-style: none none solid none;
+   background-color: transparent;
+   outline: none;
+   color: #ffffff;
+   border: none;
+   border-bottom: 1px solid white;
+   opacity: 0.6;
+}
+
+
+footer{
+   background-color: #7e964e;
+   color: #ffffff;
+   display: flex;
+   align-items: center;
+   display: grid;
+   grid-auto-flow: column;
+   padding: 10% 12% 2% 16%;
+}
+
+/* MOBILE ADAPTATION 800PX */
+@media screen and (max-width: 800px) and (min-width:400px){
+   .row1{
+      height: 500px;
+      background-size: 120%;
+   }
+   .ph{
+      display: grid;
+      grid-template-columns: 40% 60%;
+   }
+   .logo{
+      background-color: #7e964e;
+      width: 80px;
+      padding: 3%;
+   }
+   .img25{
+      width: 110px;
+      margin: 5%;
+   }
+   .garden_img{
+      font-size: 130px;
+      margin: 7% 0% 0% 2.5%;
+      padding-top: 7%;
+      letter-spacing: 40px;
+   }
+
+   /* row2 */
+   .row2{
+      padding: 5% 12%;
+      position: relative;
+   }
+   .col{font-size: 20px;}
+   .video{
+      padding-bottom: 15%;
+      width: 600px; height: 370px;
+   }
+   .video1{
+      position: absolute;
+      top: 67%;
+      left: 45%;
+      padding: 6%;
+   }
+   .garden_img1{
+      width: 766px;
+      position: absolute;
+      top: 83%; 
+   }
+   /* row3 */
+   .img1{width: 400px; height: 470px;}
+   .img2{
+      position:absolute;
+      top: 47.2%;
+      left: 50%;
+      width: 50px;
+   }
+   .zhk{
+      padding: 0% 10% 5% 25%;
+      font-size: 17px;
+   }
+   .col2{
+      display: grid;
+      grid-template-columns: 48% 52%;
+      margin-top: 1%;
+   }
+   .img3{width: 400px; height: 350px;}
+   .img4{
+      position: absolute;
+      left: 44%;
+      width: 50px;
+   } 
+   .zhk1{
+      padding: 0% 25% 5% 10%;
+      font-size: 17px;
+   }
+   /* row4 */
+   .karta_txt{
+      font-size: 45px;
+      margin: 0%  0% 2% 6.5%;
+      color:  #373a40;
+   }
+   .karta{
+      border:5px solid #7e964e ;
+      padding: 0%; 
+      width: 690px;
+   }
+   /* row5 */
+   .galery{width: 397px;}
+   .img_g{width: 400px; height: 350px;}
+
+   /* row6 */
+   .prem{font-size: 40px;} 
+   summary { 
+      position: relative; 
+      font-size: 21px; 
+      display: grid;
+      grid-template-columns: 12% 88%;
+   }  
+   .opisanie{
+      width: 500px; height: 250px;
+      margin-left: 10%;
+   }
+
+   /* row7 */
+   .row7{
+      display: grid;
+      grid-auto-flow: column;
+      padding:  3% 16% 5% 10%;
+      margin-bottom: -13%;
+   }
+   .clm1{font-size: 15px;}  
+   .clm2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px; height: 250px;
+      padding: 5% 0% 5% 15%;
+   }
+   .btn2{height: 40px; width: 250px;}
+   .inp{width: 250px; height: 15px;}
+
+   footer{
+      padding: 10% 12% 2% 10%;
+      font-size: 15px;
+      display: grid;
+      grid-template-columns: 20% 55% 25%;
+   }   
+   .imf{width: 90px;}   
+}
+/* MOBILE ADAPTATION 400PX */
+@media screen and (max-width: 400px) {
+   /* row1 */
+   .row1{background-size: 110%;}
+   .logo{width: 40px;}
+   .img25{width: 65px;}
+   .garden_img{
+      font-size: 70px;
+      margin: 7% 0% 0% 5%;
+      letter-spacing: 15px;
+   }
+
+   /* row2 */
+   .row2{padding: 1% 12%;}
+   .life_txt{font-size: 30px;}
+   .col{font-size: 12px;}
+   .video{width: 300px; height: 200px;}
+   .video1{
+      position: absolute;
+      top: 70%;
+      left: 45%;
+      padding: 5%;
+      width: 20px;
+   }
+   .garden_img1{
+      width: 389px;
+      position: absolute;
+      top: 90%; 
+      left: 0%;
+      right: 0%;
+   }
+
+   /* row3 */
+   .col1{
+      display: grid;
+      grid-template-columns: 45% 55%;
+      position: relative;
+   }
+   .img1{width: 210px; height: 280px;}
+   .img2{
+      position:absolute;
+      top: 45.6%;
+      left: 50%;
+      width: 30px;
+   }
+   .zhk{
+      padding: 0% 10% 5% 25%;
+      font-size: 10px;
+   }
+   .col2{
+      display: grid;
+      grid-template-columns: 45% 55%;
+      position: relative;
+      margin-bottom: 10%;
+   }
+   .img3{width: 210px; height: 240px;}
+   .img4{
+      position: absolute;
+      left: 40%;
+      width: 30px;
+   } 
+   .zhk1{
+      padding: 0% 25% 5% 10%;
+      font-size: 10px;
+   }
+
+   /* row4 */
+   .row4{
+      padding-bottom: 3%;
+   }
+   .karta_txt{
+      font-size: 20px;
+      margin: 0%  0% 2% 6.5%;
+      color:  #373a40;
+   }
+   .karta{
+      border:5px solid #7e964e ;
+      padding: 0; 
+      margin-left: 3%;
+      height: 250px;
+   }
+
+   /* row5 */
+   .galery{
+      padding: 5% 2% 20% 46.4%;
+      width: 202px;
+   }
+   .marquee{margin-top: -20%;}
+   .img_g{width: 250px; height: 200px;}
+
+   /* row6 */
+   .row6{
+      color: #373a40;
+      padding: 2% 5%;
+   }
+   .prem{ 
+      padding: 1% 3%;  
+      font-size: 25px;
+   } 
+   summary {
+      margin: 0% 2%;    
+      font-size: 15px; 
+      display: grid;
+      grid-template-columns: 12% 80%;
+   }  
+   summary:before { 
+      position: absolute; 
+      top: 15%; 
+      right: 2%; 
+   } 
+   .numbers{font-size: 18px;} 
+   .opisanie{
+      width: 300px;
+      margin-left: 0%;
+   }
+   .fit{
+      margin: 2% 0%;
+      font-size: 13px;
+   }
+      
+   /* row7 */
+   .row7{
+      display: grid;
+      grid-auto-flow: column;
+      padding:  3% 8% 5% 5%;
+      margin-bottom: -13%;
+      margin-left: -2%;
+   }
+   .clm1{
+      padding: 10% 2% 0% 5%;
+      font-size: 10px;
+   } 
+   .clm2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+      width: 190px; height: 190px;
+      padding: 5%;
+   }
+   .btn2{
+      background-color: #7e964e;
+      color: #ffffff;
+      border: #7e964e;
+      height: 30px; width: 180px;
+      font-size: 12px;
+      margin-top: 3%;
+   }
+   .accept{
+      font-size: 10px;
+      opacity: 0.7;
+   }
+   .inp{
+      margin-bottom: 5%;
+      width: 180px; height: 12px;
+      font-size: 10px;
+   }
+   footer{
+      display: grid;
+      grid-auto-flow: row;
+      padding: 10% 5% 2% 8%;
+      font-size: 7px;
+   }
+   .imf{
+      width: 70px;
+   }
+
+} 
+    
+   
