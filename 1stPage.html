@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daiana</title>
+
+    <link rel="stylesheet" href="style.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+  <header> 
+    <div class="hed"> 
+      <img  class="logo" src="https://static.tildacdn.com/tild3666-3964-4165-b063-386332346166/Logo_Signature_color.svg">        
+      <h3 class="nomer">+7 707 212 44 44</h3> 
+      <img  class="img25" src="https://static.tildacdn.com/tild3364-3265-4437-b466-303165383931/25_years_2.svg" >          
+       
+      <div class="hambur-menu"> 
+        <input id="menu__tog" type="checkbox" /> 
+        <label class="menu__b" for="menu__tog"> 
+          <span></span> 
+        </label> 
+    
+        <ul class="menu__bx"> 
+          <img class="icon" src="https://static.tildacdn.com/tild3666-3964-4165-b063-386332346166/Logo_Signature_color.svg"> 
+          <li><a class="menu__itm" href="mainpage.html">Главная</a></li> 
+          <li><a class="menu__itm" href="#">О нас</a></li> 
+          <li><a class="menu__itm" href="#">Преимущества</a></li> 
+          <li><a class="menu__itm" href="garden.html">Наш проект</a></li> 
+          <li><a class="menu__itm" href="uslugi.html">ALL-IN-ONE</a></li> 
+          <li><a class="menu__itm" href="rabota.html">Вакансии</a></li> 
+        </ul> 
+      </div> 
+    </div>
+  </header>
+
+  <body>
+    
+    <div class="revealy">
+      <h1 class="linii">Изящные</h1>
+      <h1 class="linii2">линии совершенства</h1>
+
+      <h3 class="h3">
+        RAMS Signature – это жилое пространство класса бизнес, для тех, кто готов выходить за рамки и гнуть свою линию. Комплекс вдохновлен меняющимися тенденциями, и людьми-новаторами. Это то место, которое объединяет в себе все самое желанное.
+        <br>
+        <br>
+        Смелые решения откликаются в архитектурной эстетике, которая вносит свободу и независимость движения, намеренно искажая типичную фигуру здания. Здесь нет углов и ограничений, формы подстраиваются под ваш уникальный стиль.
+      </h3>
+    </div>
+
+      <div class="slides">
+        <img class="mySlides" src="1st.png" alt="photo" width="1400" height="700">
+        <img class="mySlides" src="2nd.png" alt="photo" width="1400" height="700">
+        <img class="mySlides" src="3rd.png" alt="photo" width="1400" height="700">
+        <img class="mySlides" src="4th.png" alt="photo" width="1400" height="700">
+      </div>
+
+      <script>
+        var myIndex = 0;
+        carousel();
+  
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 4000); // Change image every 4 seconds
+        }
+        </script>
+
+  </body>
+
+  <div class="body2">
+
+      <div class="col1">
+          <div class="rev rights"><img src="2women.png" alt="2 women" width="847" height="650"></div>
+        <div class="secondPage">
+          <div class="rev rights"><h2>SHOPPING AVENUE</h2> <br>
+          <h3 class="h3text">Захотелось ли вам побаловать себя новыми покупками, а близких подарками или украсить дом к празднику – во всех случаях поможет SHOPPING AVENUE. Прогуливаясь по бульвару бутиков, выбирайте то, что нравится вам</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col1">
+        <div class="secondPage" style="margin: 22%  20% 0 20% ;">
+          <div class="rev lefts"><h2>PUBLIC CENTER</h2> <br>
+          <h3 class="h3text" >Эта локация станет центром притяжения для тех, кто использует свое время и отдых качественно. Дизайн ландшафта, декоративные и архитектурные элементы создают особую обстановку. Здесь приятно отдыхать, удобно делать впечатляющие снимки для социальных сетей и проводить нетворкинг с окружающими. А в теплые дни можно собраться с семьей, и устроить пикник на специально отведенном месте.</h3></div>
+        </div>
+        <div class="rev lefts"><img src="eating.png" alt="eating" width="847" height="650"></div>
+      </div>
+
+      <div class="col1">
+        <div class="rev rights"><img src="jump.png" alt="jump" width="847" height="650"></div>
+        <div class="secondPage" style="margin: 18%  20% 0 20% ;">
+          <div class="rev rights"><h2>МЕЧТЫ О ВЫСОКОМ</h2> <br>
+          <h3 class="h3text">Терраса на крыше Rams Signature представляет панораму на Заилийский Алатау и городской пейзаж. Следуйте тому образу жизни, о котором вы мечтаете: отдыхайте и расслабляйтесь с прекрасным видом на любимый Алматы, вдыхая свежий воздух. <br>
+            
+            <br>Организовывайте теплые встречи с семьей или домашние вечеринки с друзьями, и просто позвольте себе полный релакс на природе в любое время суток.</h3></div>
+        </div>
+      </div>
+
+      <div class="col1">
+        <div class="secondPage" style="margin: 26%  20% 0 20% ;">
+          <div class="rev lefts"><h2>HOLIDAY HUB</h2> <br>
+          <h3 class="h3text">HOLIDAY HUB станет одной из любимых локаций для многих. Резиденты могут организовать место встречи с друзьями, заказать бодрящий американо, подзарядить телефон или поработать за ноутбуком, не покидая территорию комплекса. Главное преимущество в том, что крытый павильон функционирует круглый год.</h3></div>
+        </div>
+        <div class="rev lefts"><img src="orange.png" alt="orange" width="847" height="649"></div>
+      </div>
+
+      <script>
+        function reveal() { 
+          var reveals = document.querySelectorAll(".rev"); 
+         
+          for (var i = 0; i < reveals.length; i++) { 
+            var windowHeight = window.innerHeight; 
+            var elementTop = reveals[i].getBoundingClientRect().top; 
+            var elementVisible = 100; 
+         
+            if (elementTop < windowHeight - elementVisible) { 
+              reveals[i].classList.add("active"); 
+            } else { 
+              reveals[i].classList.remove("active"); 
+            } 
+          } 
+        } 
+         
+        window.addEventListener("scroll", reveal);
+      </script>
+
+      <script>
+        function reveal() { 
+          var reveals = document.querySelectorAll(".revealy"); 
+        
+          for (var i = 0; i < reveals.length; i++) { 
+            var windowHeight = window.innerHeight; 
+            var elementTop = reveals[i].getBoundingClientRect().top; 
+            var elementVisible = 100; 
+        
+            if (elementTop < windowHeight - elementVisible) { 
+              reveals[i].classList.add("active"); 
+            } else { 
+              reveals[i].classList.remove("active"); 
+            } 
+          } 
+        } 
+        
+        window.addEventListener("scroll", reveal);
+      </script>
+
+      
+
+  </div>
+  
+  <footer> 
+    <img class="img" src="https://static.tildacdn.com/tild6132-3634-4535-b132-343331353066/25_years_2.svg"> 
+    <div class="roww"> 
+      <div class="address"> 
+        <p style="opacity: 0.6;">Офисы продаж</p> 
+        <p>Пн-Пт <span style="opacity: 0.6;">10:00-20:00</span></p>
+        <p>Сб-Вс <span style="opacity: 0.6;">10:00-19:00</span></p> 
+      </div> 
+      <div class="address"> 
+        <p>г.Алматы<br>ул.Тимирязева,37</p> 
+        <p>г.Алматы<br>ул.Айманова,120</p> 
+        <p>г.Алматы<br>ул.Жандосова,94б</p> 
+      </div> 
+    </div> 
+  </footer>
+  
+</html>
