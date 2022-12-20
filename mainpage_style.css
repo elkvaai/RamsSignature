@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+body{margin: 0;}
+
+  header{ 
+    background:   
+      linear-gradient(rgba(56, 135, 123, 0.3), rgba(9, 24, 59, 0.3)),
+      url('https://static.tildacdn.com/tild6565-3735-4537-b362-363563323132/5_1.jpg');       
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    color: #ffffff;
+    padding-bottom: 8%;
+  } 
+  .hed{
+    position: relative;
+    z-index: 3;
+    background:linear-gradient(rgba(56, 135, 123, 0.3), rgba(9, 24, 59, 0.3));
+    display: grid;
+    grid-template-columns: 70% 12% 13% 5%;
+    position: fixed; 
+    width: 100%;
+    height: 14%;
+    
+  }
+  .nomer{
+    position: fixed; 
+    top: 3%; 
+    right: 20%;
+  }
+  .img25{  
+    position: fixed; 
+    top: 4.5%; 
+    right: 10%;}
+  .logo{
+    position: fixed; 
+    top: 4%; 
+    left: 4%;
+   }
+  .btn{
+    font-size: 25px;
+    padding: 15% 30% 15% 10%;
+  }
+  .btn1 {
+    background-color: #38877b;
+    color: #ffffff;
+    border: #38877b;
+    border-radius: 4%;
+    height: 50px; width: 410px;
+    outline: 2px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  } 
+  .btn1:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #38877b; 
+  }
+  /* chtoby ne bylo viden chekbox */
+  #menu__tog { 
+    opacity: 0; 
+  } 
+  /*menuda polosalar tik bolyp kalmas ushin */
+  #menu__tog:checked + .menu__b > span { 
+    transform: rotate(45deg); 
+  } 
+  /*2polosa bolyp ketpes ushin*/ 
+  #menu__tog:checked + .menu__b > span::before { 
+    top: 0; 
+    transform: rotate(0deg); 
+  } 
+  #menu__tog:checked + .menu__b > span::after { 
+    top: 0; 
+    transform: rotate(90deg); 
+  } 
+  /*menu shygu ushin*/ 
+  #menu__tog:checked ~ .menu__bx { 
+    right: 0 !important; 
+  } 
+  .menu__b { 
+    position: fixed; 
+    top: 6.4%; 
+    right: 5%; 
+    width:3%; 
+    height: 6%; 
+    cursor: pointer; 
+    z-index: 1; 
+  } 
+  .menu__b > span, 
+  .menu__b > span::before,
+  .menu__b > span::after { 
+    display: block; 
+    position: absolute; 
+    width: 100%; 
+    height: 2px; 
+    background-color:#ffffff; 
+    transition-duration: .25s; 
+  } 
+  .menu__b > span::before { 
+    content: ''; 
+    top: -8px; 
+  } 
+  .menu__b > span::after { 
+    content: ''; 
+    top: 8px; 
+  } 
+  .menu__bx { 
+    display: block; 
+    position: fixed; 
+    top: 0; 
+    right: -100%; 
+    width: 300px; 
+    height: 100%; 
+    margin: 0; 
+    padding: 8% 8% 0% 2% ; 
+    list-style: none;
+    background:   
+      linear-gradient(rgba(56, 135, 123,0.8), rgba(9, 24, 59,0.8)); 
+    transition-duration: .25s; 
+  } 
+  .menu__itm { 
+    display: block; 
+    padding: 12px 24px; 
+    color: #ffffff; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px; 
+    font-weight: 600; 
+    text-decoration: none; 
+    transition-duration: .25s; 
+  } 
+  .menu__itm:hover { 
+    color: #1e574f; 
+  }
+  .icon{padding-bottom: 5%;}
+
+
+  .center{
+    background: url(https://static.tildacdn.com/tild3039-3936-4966-b330-343266393433/s.svg);
+    color: rgb(9, 24, 59);   
+  }
+  .row1{
+    display: grid;
+    grid-auto-flow: row;
+    margin: 8% 50% 5% 8% ;
+  }
+
+  .row2{
+    display: grid;
+    grid-template-columns: 34% 66%;
+    padding: 0% 8%; 
+  }
+  .col1{
+    background:linear-gradient(rgb(56, 135, 123), rgb(9, 24, 59));
+    padding: 5% 10%;
+    color: #ffffff;
+    height: 350px;
+    position: relative;
+    z-index: 2;
+  }
+  .col2{
+    border: 1px solid;
+    border-color: rgba(9, 24, 59, 0.7);
+    padding: 5% 12%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 200px;
+    margin-bottom: 1px;
+  }
+  .col3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    z-index: 1;
+  }
+  #txt{margin-top: -20px;}
+  .mySlides{
+    width: 1000px; height: 550px;
+    margin-left: -25%;
+  }
+
+  .row3{
+    padding: 10% 8%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .sld1{
+    width: 500px; height: 550px;  
+  }
+  .sld2{
+    width: 450px; height: 600px;
+    margin: -12% 0% 0% 20%;
+  }
+  .sld3{
+    width: 550px; height: 400px;
+    margin: -25% 0% 0% 10% ;
+  }
+  .txt_sld{
+    font-size: 65px;
+    margin-left: 5%;
+  }
+  
+  .karta_txt{
+    font-size: 40px;
+    margin-left: 4%;
+    color: #09183b;
+  }
+  .karta{
+    border:3px solid #09183b ;
+    padding: 3% 4%; 
+    margin-left: 3%;
+ }
+ 
+  .row4{
+    display: grid;
+    grid-auto-flow: column;
+    padding:  3% 15% 5% 15%;
+ 
+  }
+  .clm1{
+    margin: 0% 40% 0% 0%;
+    color: #09183b;
+  }
+  .clm2{
+    background:linear-gradient(rgb(56, 135, 123), rgb(9, 24, 59));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    width: 500px; height: 250px;
+  
+  }
+  .btn2{
+    background-color: #38877b;
+    color: #ffffff;
+    border: #38877b;
+    height: 40px; width: 380px;
+    font-size: 15px;
+    margin-top: 5%
+    ;
+  }
+  .accept{
+    font-size: 13px;
+    opacity: 0.7;
+  }
+  .inp{
+    margin-bottom: 5%;
+    width: 380px; height: 30px;
+    border-style: none none solid none;
+    background-color: transparent;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid white;
+    opacity: 0.6;
+  }
+
+
+  footer{ 
+    background-color: #09183b; 
+    color:#ffffff; 
+    display: grid; 
+    grid-template-columns: 40% 60%;
+    padding: 3% 0%; 
+  } 
+  .roww{ 
+    display: grid; 
+    grid-template-rows: 33% 33% 33%; 
+
+  } 
+  .address{ 
+    font-size:110%; 
+    display: grid; 
+    grid-template-columns: 25% 37% 37%; 
+  } 
+  .img{ 
+    padding: 5% 10%; 
+  } 
+  /* MOBILE ADAPTATION 800PX */
+@media screen and (max-width: 800px) and (min-width:400px){
+ 
+  .hed{
+    position: fixed;
+    width: 768px;
+    height: 7%;
+  }
+  .nomer{display: none;}
+  .img25{display: none;}
+  .logo{
+    position: fixed; 
+    top: 1.5%; 
+    left: 3%;
+    width: 100px;
+   }
+
+  .btn{
+    font-size: 17px;
+    padding: 15% 30% 6% 10%;
+  }
+  .btn1 {height: 40px; width: 400px;} 
+ 
+  .menu__b { 
+    position: fixed; 
+    top: 3.4%; 
+    right: 5%; 
+    width:3%; 
+    height: 6%; 
+    cursor: pointer; 
+    z-index: 1; 
+  } 
+  
+  .row1{ margin: 5% 30% 5% 8% ;}
+
+  .row2{
+    display: grid;
+    grid-template-columns: 34% 66%;
+    padding: 0% 8%; 
+  }
+  .col1{
+    padding: 5% 10%;
+    height: 300px;
+    font-size: 12px;
+  }
+  .col2{
+    padding: 5%;
+    height: 200px;
+    margin-bottom: 1px;
+    font-size: 12px;
+  }
+  #txt{margin-top: -10px;}
+  .mySlides{width: 520px; height: 350px;}
+
+  .sld1{
+    width: 320px; height: 250px;  
+  }
+  .sld2{
+    width: 280px; height: 320px;
+    margin: -10% 0% 0% 20%;
+  }
+  .sld3{
+    width: 300px; height: 250px;
+    margin: -17% 0% 0% 15% ;
+  }
+  .txt_sld{
+    font-size: 35px;
+    margin-left: 15%;
+  }
+  .karta_txt{
+    font-size: 40px;
+    margin-left: 4%;
+  }
+  .karta{
+    padding: 0%; 
+    margin: 1%;
+ }
+ 
+  .row4{
+    display: grid;
+    grid-auto-flow: column;
+    padding:  3% 5% 5% 5%;
+ 
+  }
+  .clm1{
+    margin: -2% 5% 0% 0%;
+    
+  }
+  .clm2{
+    
+    width: 400px; height: 250px;
+    padding-left: 5%;
+  
+  }
+  .btn2{
+    height: 40px; width: 350px;
+    font-size: 15px;
+    margin-top: 5%;
+  }
+  .inp{
+    margin-bottom: 5%;
+    width: 350px; height: 25px; 
+  }
+  footer{ 
+    display: grid; 
+    grid-template-columns: 25% 75%;
+    padding: 3% 0%; 
+  } 
+  .roww{ 
+    display: grid; 
+    grid-template-rows: 50% 50%; 
+    font-size: 12px;
+  } 
+  .address{ 
+    font-size:110%; 
+    display: grid; 
+    grid-template-columns: 33% 33% 33%; 
+  } 
+  .img{ 
+    width: 140px; 
+  } 
+  
+}
+/* MOBILE ADAPTATION 400PX */
+@media screen and (max-width: 400px) {
+  header{ 
+    padding-bottom: 8%;
+    background-size: 130% ;
+  } 
+  .hed{ 
+    width: 390px;
+    height: 5%;
+  }
+  .nomer{display: none;}
+  .img25{display: none;}
+  .logo{
+    position: fixed; 
+    top: 1%; 
+    left: 3%;
+    width: 70px;
+   }
+  .btn{
+    font-size: 10px;
+    padding: 15% 30% 0% 10%;
+  }
+  .btn1 {
+    height: 30px; width: 230px;
+    font-size: 7px;
+  } 
+  
+  .menu__b { 
+    position: fixed; 
+    top: 2.2%; 
+    right: 8%; 
+    width:3%; 
+    height: 6%; 
+    cursor: pointer; 
+    z-index: 1; 
+  } 
+  .menu__bx { 
+    display: block; 
+    position: fixed; 
+    top: 0; 
+    right: -100%; 
+    width: 200px; 
+    height: 100%; 
+    margin: 0; 
+    padding: 8% 8% 0% 2% ; 
+    list-style: none;
+    background:   
+      linear-gradient(rgba(56, 135, 123,0.8), rgba(9, 24, 59,0.8)); 
+    transition-duration: .25s; 
+  } 
+  
+  .menu__itm:hover { 
+    color: #1e574f; 
+  }
+  .icon{
+    width: 100px;
+    padding-left: 5%;
+  }
+
+  .row1{
+    margin: 0% 10% 5% 8% ;
+    font-size: 12px;
+
+  }
+  .row2{
+    display: grid;
+    grid-auto-flow: row;
+    padding: 0% 8%; 
+  }
+  .col1{
+    padding: 5% 10%;
+    width: 310px;
+    height: 200px;
+    font-size: 12px;
+  }
+  #colo1{
+    padding: 0% 12%;
+    height: 150px; width: 304px;
+    margin: 200% 0% 0% -104%;
+    font-size: 12px;
+  }
+  #colo2{
+    padding: 0% 12%;
+    height: 150px; width: 304px;
+    margin: 345% 0% 0% -204%;
+    font-size: 12px;
+  }
+  .col3{
+    display: grid;
+    grid-auto-flow: row;
+  }
+  #txt{margin-top: -40px;}
+  .mySlides{
+    padding-top: 5%;
+    width: 333px; height: 250px;
+    margin-left: -104%;
+  }
+
+  .row3{
+    display: none;
+  }
+  .karta_txt{
+    font-size: 30px;
+    margin-left: 4%;
+  }
+  .karta{
+    padding: 0%; 
+    margin: 1%;
+    height: 300px;
+ }
+ 
+  .row4{
+    display: grid;
+    grid-auto-flow: row;
+    font-size: 17px;
+    padding: 5%;
+ 
+  }
+  .clm1{
+    margin: 0% ;
+  }
+  .clm2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px; height: 250px;
+    padding-left: 5%;
+  
+  }
+  .btn2{
+    height: 40px; width: 280px;
+    font-size: 15px;
+    margin-top: 5%;
+  }
+  .inp{
+    margin-bottom: 5%;
+    width: 280px; height: 20px;
+   
+  }
+  footer{ 
+    display: grid; 
+    grid-template-columns: 30% ;
+    padding: 3% 5% 5% 2%; 
+    font-size: 12px;
+  } 
+  .roww{ 
+    display:grid;
+    grid-template-rows: 50% 50%;
+
+  } 
+  .address{ 
+    display: grid; 
+    grid-template-columns: 36% 36% 28%;
+
+     
+    
+  } 
+  .img{ 
+    padding: 5% 10%;
+    width: 100px; 
+  }
+} 
+ 
