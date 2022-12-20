@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daiana</title>
+
+     <link rel="stylesheet" href="back.css" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com"> 
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<header> 
+  <div class="hed"> 
+    <img  class="logo" src="https://static.tildacdn.com/tild3666-3964-4165-b063-386332346166/Logo_Signature_color.svg">        
+    <h3 class="nomer">+7 707 212 44 44</h3> 
+    <img  class="img25" src="https://static.tildacdn.com/tild3364-3265-4437-b466-303165383931/25_years_2.svg" >          
+     
+    <div class="hambur-menu"> 
+      <input id="menu__tog" type="checkbox" /> 
+      <label class="menu__b" for="menu__tog"> 
+        <span></span> 
+      </label> 
+  
+      <ul class="menu__bx"> 
+        <img class="icon" src="https://static.tildacdn.com/tild3666-3964-4165-b063-386332346166/Logo_Signature_color.svg"> 
+        <li><a class="menu__itm" href="mainpage.html">Главная</a></li> 
+        <li><a class="menu__itm" href="withBack.html">Жилые комплексы</a></li> 
+        <li><a class="menu__itm" href="1stPage.html">Преимущества</a></li> 
+        <li><a class="menu__itm" href="garden.html">Наш проект</a></li> 
+        <li><a class="menu__itm" href="uslugi.html">ALL-IN-ONE</a></li> 
+        <li><a class="menu__itm" href="rabota.html">Вакансии</a></li> 
+      </ul> 
+      </ul> 
+    </div> 
+  </div>
+</header>
+
+
+<body>
+  <div class="slid">
+    <img class="mySlides" src="https://sales.bazis.kz/cms/media/2021/07/2000-7865d5486d0-7b16-4db6-8962-b47564a1d0e7-2.jpg" alt="" width="100%" height="500vh">
+    <img class="mySlides" src="https://sales.bazis.kz/cms/media/2020/02/prima-vera.jpg" alt="" width="100%" height="500vh">
+    <img class="mySlides" src="https://sales.bazis.kz/cms/media/2019/11/1-18-2.jpg" alt="" width="100%" height="500vh">
+    <img class="mySlides" src="https://sales.bazis.kz/cms/media/2019/11/cam_13-s-reki-2_ret_blue_river-2.jpg" alt="" width="100%" height="500vh">
+    <img class="mySlides" src="https://sales.bazis.kz/cms/media/2020/02/vid-1-dnevnoj-satpaeva-obshhij-2_8000_3-1.jpg" alt="" width="100%" height="500vh">
+    <img class="mySlides" src="https://sales.bazis.kz/cms/media/2019/11/2500-1400_3.jpg" alt="" width="100%" height="500vh">
+    <img class="mySlides" src="https://sales.bazis.kz/cms/media/2020/12/c5-vid-na-alleyu-1.jpg" alt="" width="100%" height="500vh">
+    <img class="mySlides" src="https://sales.bazis.kz/cms/media/2020/07/1-2.jpg" alt="" width="100%" height="500vh">
+  </div>
+  
+  <script>
+
+  //slider
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+
+  </script>
+
+  
+  <h1 class="h1">Жилые комплексы</h1>
+
+  <!-- <img id="image" src="" /> -->
+  <button id="myImg">Вид с птичьего полета</button>
+
+  <div id="mySrc" class="ImgClass">
+    <span class="close">&times;</span>
+    <img class="ImgClass-content" id="img01">
+  </div>
+
+  <script>
+
+    var ImgClass = document.getElementById("mySrc");
+    var img = document.getElementById("myImg");
+    var showImg = document.getElementById("img01");
+    img.onclick = function(){
+      ImgClass.style.display = "block";
+      showImg.src = "Vid.png";
+    }
+    
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() { 
+      ImgClass.style.display = "none";
+    }
+
+  </script>
+  
+  <div class="row">
+    <div class="objects">
+      <div class="image"><img class="poster" src="Orion III.png" alt="photo" width="280px" height="350px"></div>
+      <div class="nazvanie"><img class="name" src="orion iii 3.png" alt="photo" width="200px" height="55px"></div>
+      <div class="opisanie"><img class="text" src="orion iii 2.png" alt="photo" width="310px" height="150px"></div>
+      <button class="open-button" onclick="openForm()">Получить консультацию</button>
+    </div>
+
+    <div class="objects">
+      <div class="image"><img class="poster" src="Lumiere.png" alt="photo" width="280px" height="350px"></div>
+      <div class="nazvanie"><img class="name" src="lumiere 3.png" alt="photo" width="200px" height="55px"></div>
+      <div class="opisanie"><img class="text" src="lumiere 2.png" alt="photo" width="310px" height="150px"></div>
+      <button class="open-button" onclick="openForm()">Получить консультацию</button>
+    </div>
+
+    <div class="objects" >
+      <div class="image"><img class="poster" src="Al'farabi 27.png" alt="photo" width="280px" height="350px"></div>
+      <div class="nazvanie"><img class="name" src="al'farabi 27 3.png" alt="photo" width="200px" height="55px"></div>
+      <div class="opisanie"><img class="text" src="al'farabi 27 2.png" alt="photo" width="310px" height="150px"></div>
+      <button class="open-button" onclick="openForm()">Получить консультацию</button>
+    </div>
+
+    <div class="objects">
+      <div class="image"><img class="poster" src="primavera.png" alt="photo" width="280px" height="350px"></div>
+      <div class="nazvanie"><img class="name" src="primavera 3.png" alt="photo" width="200px" height="55px"></div>
+      <div class="opisanie"><img class="text" src="primavera 2.png" alt="photo" width="310px" height="150px"></div>
+      <button class="open-button" onclick="openForm()">Получить консультацию</button>
+    </div>
+
+    <div class="objects"> 
+      <div class="image"><img class="poster" src="metropole.png" alt="photo" width="280px" height="350px"></div>
+      <div class="nazvanie"><img class="name" src="metropole 3.png" alt="photo" width="200px" height="55px"></div>
+      <div class="opisanie"><img class="text" src="metropole 2.png" alt="photo" width="310px" height="150px"></div>
+      <button class="open-button" onclick="openForm()">Получить консультацию</button>
+    </div>
+
+    <div class="objects"> 
+      <div class="image"><img class="poster" src="Orion II.png" alt="photo" width="280px" height="350px"></div>
+      <div class="nazvanie"><img class="name" src="orion ii 3.png" alt="photo" width="200px" height="55px"></div>
+      <div class="opisanie"><img class="text" src="orion ii 2.png" alt="photo" width="310px" height="150px"></div>
+      <button class="open-button" onclick="openForm()">Получить консультацию</button>
+    </div>
+
+    <div class="objects"> 
+      <div class="image"><img class="poster" src="Estet.png" alt="photo" width="280px" height="360px"></div>
+      <div class="nazvanie"><img class="name" src="estet 3.png" alt="photo" width="200px" height="55px"></div>
+      <div class="opisanie"><img class="text" src="estet 2.png" alt="photo" width="310px" height="150px"></div>
+      <button class="open-button" onclick="openForm()">Получить консультацию</button>
+    </div>
+
+    <div class="objects"> 
+      <div class="image"><img class="poster" src="Legenda.png" alt="photo" width="280px" height="360px"></div>
+      <div class="nazvanie"><img class="name" src="legenda 3.png" alt="photo" width="200px" height="55px"></div>
+      <div class="opisanie"><img class="text" src="legenda 2.png" alt="photo" width="310px" height="150px"></div>
+      <button class="open-button" onclick="openForm()">Получить консультацию</button>
+    </div>
+
+    <div class="objects"> 
+      <div class="image"><img class="poster" src="Remizovka.png" alt="photo" width="280px" height="360px"></div>
+      <div class="nazvanie"><img class="name" src="remizovka 3.png" alt="photo" width="200px" height="55px"></div>
+      <div class="opisanie"><img class="text" src="remizovka 2.png" alt="photo" width="310px" height="150px"></div>
+      <button class="open-button" onclick="openForm()">Получить консультацию</button>
+    </div>
+
+    <div class="objects"> 
+      <div class="image"><img class="poster" src="Riviera.png" alt="photo" width="280px" height="360px"></div>
+      <div class="nazvanie"><img class="name" src="riviera 3.png" alt="photo" width="200px" height="55px"></div>
+      <div class="opisanie"><img class="text" src="riviera 2.png" alt="photo" width="310px" height="150px"></div>
+      <button class="open-button" onclick="openForm()">Получить консультацию</button>
+    </div>
+
+    <div class="objects"> 
+      <div class="image"><img class="poster" src="Jazz.png" alt="photo" width="280px" height="360px"></div>
+      <div class="nazvanie"><img class="name" src="jazz 3.png" alt="photo" width="200px" height="55px"></div>
+      <div class="opisanie"><img class="text" src="jazz 2.png" alt="photo" width="310px" height="150px"></div>
+      <button class="open-button" onclick="openForm()">Получить консультацию</button>
+    </div>
+
+    <div class="objects"> 
+      <div class="image"><img class="poster" src="Akvarel.png" alt="photo" width="280px" height="360px"></div>
+      <div class="nazvanie"><img class="name" src="akvarel 3.png" alt="photo" width="200px" height="55px"></div>
+      <div class="opisanie"><img class="text" src="akvarel 2.png" alt="photo" width="310px" height="150px"></div>
+      <button class="open-button" onclick="openForm()">Получить консультацию</button>
+    </div>
+
+    <div class="form" id="myForm">
+      <form action="back.php" class="form-container" method="post">
+        <h2 class="formh2">Для получения подробной инофрмации о жилом комплексе, пожалуйста, зарегестрируйтесь</h2>
+    
+        <label for="name"><b>Ваше имя</b></label>
+        <input type="text" placeholder="Ваше имя" id="name" name="name" required> 
+    
+        <label for="email"><b>E-mail</b></label>
+        <input type="text" placeholder="E-mail" id="email" name="email" required> 
+    
+        <label for="phone"><b>Контактный телефон</b></label>
+        <input type="text" placeholder="+7 __________" id="phone" name="phone" required> 
+    
+        <button type="submit" class="button">Зарегестрироваться</button>
+        <button type="button" class="button" onclick="closeForm()">Закрыть</button>
+      </form>
+    </div>
+
+  </div>
+
+  <script>
+     function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
+</body>
+
+
+<footer> 
+  <img class="img" src="https://static.tildacdn.com/tild6132-3634-4535-b132-343331353066/25_years_2.svg"> 
+  <div class="roww"> 
+    <div class="address"> 
+      <p style="opacity: 0.6;">Офисы продаж</p> 
+      <p>Пн-Пт <span style="opacity: 0.6;">10:00-20:00</span></p>
+      <p>Сб-Вс <span style="opacity: 0.6;">10:00-19:00</span></p> 
+    </div> 
+    <div class="address"> 
+      <p>г.Алматы<br>ул.Тимирязева,37</p> 
+      <p>г.Алматы<br>ул.Айманова,120</p> 
+      <p>г.Алматы<br>ул.Жандосова,94б</p> 
+    </div> 
+  </div> 
+</footer>
